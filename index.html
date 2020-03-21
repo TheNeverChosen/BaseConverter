@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Base Converter</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h1 class="title">Base Converter</h1>
+
+      <div class="converter">
+
+        <div class="header">
+
+          <div id="left_group" class="bases">
+            <button type="button" value="2">2 (Binary)</button>
+            <button type="button" value="8">8 (Octal)</button>
+            <button class="selected" type="button" value="10">10 (Decimal)</button>
+            <button type="button" value="16">16 (Hexadecimal)</button>
+          </div>
+
+          <button id="swap" class="circle">
+            <img class="img" src="img/swap.png" draggable="false"></img>
+          </button>
+
+          <div id="right_group" class="bases">
+            <button class="selected" type="button" value="2">2 (Binary)</button>
+            <button type="button" value="8">8 (Octal)</button>
+            <button type="button" value="10">10 (Decimal)</button>
+            <button type="button" value="16">16 (Hexadecimal)</button>
+          </div>
+
+        </div>
+
+        <div class="content">
+
+          <div class="numbers">
+            <textarea placeholder="Number to convert" rows="10"></textarea>
+          </div>
+
+          <div class="numbers">
+            <textarea placeholder="Converted number" rows="10" readonly></textarea>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="js/index.js"></script>
+
+  </body>
+
+</html>

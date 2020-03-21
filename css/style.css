@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 1.75rem;
+  padding: 1.75rem;
+  margin: 0.5rem;
+}
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  width: 95%;
+  overflow: hidden;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+}
+
+/*=================Button====================*/
+
+button{
+  display: flex;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: 0.5s;
+  outline: none;
+  border: none;
+  color: #757575;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+button:hover{
+  transition: 0.5s;
+  background-color: #f5f5f5;
+}
+
+button:active{
+  transition: 0s;
+  background-color: #d9d9d9;
+}
+
+.circle{
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.header .bases button.selected{
+  color: #4285f4;
+  border-bottom: 3px solid #4285f4;
+}
+
+
+/*===========================================*/
+/*=================Header====================*/
+
+.header {
+  display: flex;
+  border-bottom: 1px #d9d9d9 solid;
+  align-items: center;
+}
+
+.header .bases{
+  display: flex;
+  flex-grow: 1;
+}
+
+.bases button{
+  padding: 0.9rem 1.5rem;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+
+.header .circle{
+  padding: 0.9rem;
+}
+
+.header .circle .img{
+  width: 1rem;
+  height: 1rem;
+}
+
+/*===========================================*/
+/*=================Content===================*/
+.content{
+  display: flex;
+}
+
+.numbers{
+  padding: 1.5rem;  
+  flex-grow: 1;
+  display: flex;
+}
+
+.numbers:nth-child(2){
+  background-color: #f5f5f5;
+}
+
+.numbers textarea{
+  flex-grow: 1;
+  resize: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/*===========================================*/
